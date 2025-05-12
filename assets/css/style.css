@@ -1,0 +1,654 @@
+/* Styles for header */
+html {
+	font-family: 'Cera Pro', sans-serif;
+}
+
+html,
+body {
+	margin: 0;
+	width: 100%;
+	overflow-x: hidden;
+	/* Убираем горизонтальный скролл */
+}
+
+header {
+	background-color: #fff;
+	color: #473b8d;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+.header_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+
+}
+
+.logo img {
+
+	margin-right: 20px;
+}
+
+.logo_foto {
+	height: 50px;
+}
+
+.logo_centra_s {
+	height: 35px;
+}
+
+.language_selector {
+	display: flex;
+	font-weight: bold;
+}
+
+.language {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #473b8d;
+	margin-left: 10px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.language:hover {
+	background-color: #440c0b;
+	border: 0px solid #440c0b;
+}
+
+.language.selected {
+	background-color: #fff;
+	color: #473b8d;
+	border: 2px solid #473b8d;
+}
+
+.language.selected:hover {
+	background-color: #fff;
+	color: #473b8d;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	/* Переопределяем фиксированную высоту на авто */
+	overflow: hidden;
+	/* Добавляем управление переполнением */
+}
+
+.slider_image {
+	width: 100%;
+	height: auto;
+	/* Убираем высоту для сохранения пропорций изображения */
+	object-fit: cover;
+	/* Обеспечиваем покрытие всей доступной области */
+}
+
+.slider_logo {
+	max-width: 40%;
+	/* Ширина логотипа, можете изменить по вашему желанию */
+	margin-top: -80px;
+	margin-bottom: 30px;
+	/* Отступ между логотипом и следующим блоком */
+	background-color: #fff;
+	border: 5px solid #fff;
+	/* Задает рамку толщиной 5px и цвета #fff */
+
+}
+
+/*================================
+RUBRIK SECTION
+================================*/
+.rubrik {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 0;
+	/* Убираем отрицательный отступ, который мог вызывать наложение */
+
+	padding-top: 20px;
+	/* Добавляем верхний отступ */
+	width: 100%;
+	/* Задаем полную ширину для предотвращения наложения */
+}
+
+
+.rubrik_header {
+	width: 100%;
+	text-align: center;
+
+}
+
+
+.rubrik_h1 {
+	display: inline;
+	font-family: 'Cera Pro', sans-serif;
+	text-align: center;
+	width: 100%;
+	background-color: #473b8d;
+	border-top: 10px solid #473b8d;
+	border-bottom: 10px solid #473b8d;
+	color: #fff;
+	margin-top: 35px;
+	/* Добавляет отступ сверху */
+}
+
+.rubrik_content {
+	display: flex;
+	justify-content: space-between; /* Распределяем элементы по краям */
+	width: 90%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.rubrik_video {
+	flex-shrink: 0; /* Запрещаем сжатие видео */
+	width: 394px; /* Ширина видео */
+	margin-right: 5%;
+}
+.rubrik_text_bold {
+	background-color: rgba(157, 40, 30, 0.05); /* Прозрачный красный цвет с уровнем прозрачности 0.5 */
+	font-size: 1.1em;
+	color: #440c0b;
+	margin-top: 0;
+	padding: 15px;
+}
+.rubrik_text {
+	flex: 1; /* Растягиваем текст на всю оставшуюся ширину */
+	padding-bottom: 70px;
+	
+	/* Добавляем отступ внутри столбцов */
+
+	font-family: 'Cera Pro', sans-serif;
+	/* Задаем шрифт, можно изменить на другой */
+	font-size: 20px;
+	/* Размер шрифта, можно увеличить или уменьшить по желанию */
+	line-height: 1.5;
+	/* Увеличиваем расстояние между строками */
+	color: #333;
+	/* Задаем цвет текста, можно изменить */
+}
+.text_red {
+	color: #fff;
+	background-color: #473b8d;
+	padding: 10px 25px 10px 25px;
+}
+.hr_50 {
+	width: 50%; /* Ширина линии */
+   height: 2px; /* Высота линии */
+   background-color: #473b8d; /* Цвет линии */
+   border: none; /* Убираем границу */
+   margin: 0; /* Убираем отступы */
+}
+.hr_15 {
+	width: 5%; /* Ширина линии */
+   height: 1px; /* Высота линии */
+   background-color: #473b8d; /* Цвет линии */
+   border: none; /* Убираем границу */
+   margin: 0; /* Убираем отступы */
+}
+.hr_25 {
+	width: 100%; /* Ширина линии */
+   height: 1px; /* Высота линии */
+   background-color: #473b8d; /* Цвет линии */
+   border: none; /* Убираем границу */
+   margin: 0; /* Убираем отступы */
+}
+
+.inna {
+	width: 70%;
+}
+
+.rubrik_text_competition {
+	padding-bottom: 50px;
+	/* Добавляем отступ внутри столбцов */
+	margin-top: 0px;
+	font-family: 'Cera Pro', sans-serif;
+	/* Задаем шрифт, можно изменить на другой */
+	font-size: 20px;
+	/* Размер шрифта, можно увеличить или уменьшить по желанию */
+	line-height: 1.5;
+	/* Увеличиваем расстояние между строками */
+	color: #2e2d7f;
+	/* Задаем цвет текста, можно изменить */
+}
+
+.rubrik_competition_header {
+	display: inline;
+	font-family: 'Cera Pro', sans-serif;
+	text-align: center;
+	width: 100%;
+	font-size: larger;
+	background-color: #473b8d; 
+	color: #fff;
+	padding: 15px 0; /* Используется padding только по вертикали */
+	margin: 0 0 20px 0; /* Убираем отступы */
+}
+
+/* Стили для каждой колонки */
+.rubrik_competition_table_colum {
+	width: 90%;
+	display: flex;
+	 padding: 20px 0; /* Дополнительный отступ для визуального разделения */
+	
+	 
+}
+
+/* Стили для каждой строки внутри колонки */
+.rubrik_competition_table_row {
+	width: 75%;
+	justify-content: center; /* Центрирование столбцов по горизонтали */
+    align-items: center; /* Центрирование столбцов по вертикали */
+	 flex-wrap: wrap; /* Обеспечиваем перенос элементов, если они не помещаются */
+	flex: 5;            /* Каждый столбец занимает равную часть пространства */
+	padding: 10px;      /* Опционально, добавляем некоторый внутренний отступ */
+	
+}
+
+/* Стили для ссылок и заголовков */
+.rubrik_competition_header_name { 
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	padding: 8px 0; /* Вертикальные отступы для текста */
+}
+
+.rubrik_competition_link_text {
+	text-decoration: none; /* Убираем подчеркивание */
+	display: block; /* Превращаем ссылку в блочный элемент */
+	width: fit-content; /* Устанавливаем ширину по содержимому */
+	margin: 0 auto; /* Автоматический отступ слева и справа для центрирования */
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #473b8d;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 25px 10px 25px; /* Вертикальные отступы для текста */
+}
+.rubrik_competition_link {
+	text-decoration: none; /* Убираем подчеркивание */
+	display: block; /* Превращаем ссылку в блочный элемент */
+	width: fit-content; /* Устанавливаем ширину по содержимому */
+	margin: 0 auto; /* Автоматический отступ слева и справа для центрирования */
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #473b8d;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 25px 10px 25px; /* Вертикальные отступы для текста */
+}
+.rubrik_competition_link:hover{
+	background-color: #440c0b;
+	border: 0px solid #440c0b;
+}
+
+.rubrik_competition_link.selected {
+	background-color: #fff;
+	color: #473b8d;
+	border: 2px solid #473b8d;
+}
+
+.rubrik_competition_link.selected:hover {
+	background-color: #fff;
+	color: #473b8d;
+}
+.juri {
+	line-height: 2.5;
+}
+.circle {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%; /* Делаем кружок */
+	background-color: #473b8d; /* Цвет фона */
+	color: #fff; /* Цвет текста */
+ }
+
+.to_home_page {
+	display: block; /* Превращаем ссылку в блочный элемент */
+	width: fit-content; /* Устанавливаем ширину по содержимому */
+	margin: 0 auto; /* Автоматический отступ слева и справа для центрирования */
+	margin-top: 5%;
+	margin-bottom: 15px;
+}
+.logo {
+	position: relative; /* Необходимо для позиционирования псевдоэлемента */
+	display: inline-block; /* Чтобы блок выравнивался в строку */
+}
+
+.logo img {
+	transition: transform 0.3s ease; /* Плавный переход при изменении масштаба */
+}
+
+.logo:hover img {
+	transform: scale(1.2); /* Увеличиваем изображение в 1.2 раза при наведении */
+}
+
+
+
+
+/* Контейнер для видео */
+.rubrik_competition_video {
+	position: relative;
+	width: 100%; /* Занимает всю ширину родительского элемента */
+	padding-top: 56.25%; /* Аспектное соотношение 16:9 */
+	background-color: #000; /* Черный фон на случай, если видео не загружается */
+	overflow: hidden; /* Прячет части iframe, которые выходят за пределы контейнера */
+	margin-bottom: 15px;
+}
+
+/* Стили для iframe */
+.rubrik_competition_video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+/*================================
+FOOTER SECTION
+================================*/
+footer {
+	border-top: 2px solid #473b8d;
+	border-bottom: 2px solid #473b8d;
+	margin-bottom: 20px;
+}
+
+.footer_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer_slogan {
+	color: #473b8d;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding: 20px 40px 20px 40px;
+	text-align: center;
+	
+	
+}
+.footer_socials_slogan{
+	color: #473b8d;
+	font-size: 18px;
+	
+	margin-bottom: 0;
+	padding: 20px 40px 0 40px;
+	text-align: center;
+}
+.footer_socials_p {
+padding-top: 20px;
+font-size: larger;
+}
+
+.footer_socials {
+	display: flex;
+	color: #473b8d;
+	align-items: center;
+	text-align: center;
+	margin: 10px 0 10px 0;
+	padding-top: 10px;
+	border-top: 2px solid #473b8d;
+	}
+
+
+.social {
+	margin: 10px 40px 10px 40px;
+	/* Provide spacing around the icons */
+	display: flex;
+	/* Use flex to align icons properly */
+	justify-content: center;
+	/* Center icons horizontally in the flex container */
+	align-items: center;
+	/* Center icons vertically in the flex container */
+	
+}
+
+.svg_logo {
+	fill: #473b8d;
+	/* Цвет заливки SVG */
+	height: 50px;
+	/* Устанавливаем высоту */
+}
+
+.svg_logo:hover {
+	fill:#440c0b;
+	filter: drop-shadow(1px 1px 1px #C63527); /* горизонтальное смещение, вертикальное смещение, размытие тени, цвет тени */
+}
+.qr_code {
+	max-width: 100px;
+	margin: 0 40px 20px 40px;
+}
+
+.footer_share_slogan {
+	margin: 10px 0 15px 0;
+	font-size: 20px;
+	font-style: italic;
+	color: #440c0b;
+	}
+
+	.footer_share_text {
+		display: flex;
+			/* Use flex to align icons properly */
+			justify-content: center;
+			/* Center icons horizontally in the flex container */
+			align-items: center;
+			/* Center icons vertically in the flex container */
+			padding: 0 20px 0 20px;
+			border-top: 2px solid #473b8d;
+			}
+		.footer_share_text_a {
+			margin: 20px 30px 30px 30px;
+			text-decoration: none;
+			color: #473b8d;
+			
+		}
+		
+		.footer_share_text_a:hover {
+			color: #440c0b;
+			text-decoration: none;
+			
+		}
+
+.qr_code,
+.footer_socials {
+	display: flex;
+	align-items: center;
+	/* Align vertically */
+	justify-content: center;
+	/* Align horizontally */
+}
+
+/*================================
+COMPETITION - SECTION
+================================*/
+.competition {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+padding: 10px 0 10px 0;
+	margin: 30px 0 30px 0;
+	background-color: #473b8d;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+.competition a {
+	color: inherit;
+	text-decoration: none;
+ }
+.competition:hover {
+	background-color: #440c0b;
+		text-decoration: none;
+}
+
+/*================================
+FOOTER-FOOTER - SECTION
+================================*/
+.footer_footer {
+	display: flex;
+	justify-content: center; /* Выравнивание по центру горизонтали */
+	background-color: #473b8d;
+	color: #fff;
+	padding: 25px 0 25px 0;
+	margin-top: 75px;
+	
+}
+.footer_footer_logo {
+	display: flex;
+	align-items: center; /* Выравнивание по центру вертикали */
+	color: #fff;
+ }
+ 
+ .footer_footer_logo > * {
+	margin: 0 35px; /* Расстояние между элементами */
+ }
+.svg_logo_footer {
+	fill: #fff;
+	/* Цвет заливки SVG */
+	height: 25px;
+	/* Устанавливаем высоту */
+}
+.svg_logo_footer:hover {
+	fill:#440c0b;
+	}
+
+
+
+
+/* Медиа-запрос для адаптивного макета */
+@media (max-width: 768px) {
+	.rubrik_content {
+		flex-direction: column;
+		/* Переключаем на столбчатый макет для маленьких экранов */
+	}
+
+	.rubrik_text {
+		width: 100%;
+		padding-left: 0;
+		padding-top: 50px;
+		/* Столбцы занимают всю доступную ширину на маленьких экранах */
+	}
+
+	.rubrik_video {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.rubrik_h1 {
+		margin-top: 10px;
+		/* Уменьшаем отступ сверху для мобильных экранов */
+	}
+
+	.rubrik_h1,
+	.slider_logo {
+		margin-top: 20px;
+		/* Увеличиваем отступ сверху для мобильных устройств */
+	}
+
+
+	.footer_share_text {
+		text-align: center; /* Центрируем содержимое */
+		 padding: 0 20px; /* Поля по бокам */
+		 border-top: 2px solid #473b8d;
+		 display: flex;
+		 flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку при необходимости */
+		 justify-content: center; /* Центрируем элементы по горизонтали */
+	}
+	
+	
+	
+	.footer_share_text_a {
+		margin: 20px 15px; /* Устанавливаем отступы */
+		 text-decoration: none;
+		 color: #473b8d;
+		 display: block; /* Превращаем ссылки в блочные элементы */
+		 width: 100%; /* Занимаем всю доступную ширину */
+	}
+	.footer_socials {
+		display: grid; /* Используем grid layout */
+		grid-template-columns: repeat(2, 1fr); /* Два столбца равной ширины */
+		gap: 20px; /* Отступ между элементами */
+		justify-content: center; /* Центрируем по горизонтали */
+	 }
+  
+	 .footer_socials > div {
+		text-align: center; /* Выравниваем содержимое по центру в каждой колонке */
+	 }
+
+  .social {
+		margin: 0; /* Удаление отступа у ссылок */
+  }
+	.footer_share_slogan {
+		padding-top: 35px;
+	}
+	
+	.footer_share_links {
+		flex-direction: column;
+		align-items: center;
+		margin: 10px 0
+	}
+
+
+	.footer_share_links a {
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+
+
+
+	.qr_code {
+		display: none;
+	}
+
+	/* Стили для колонок */
+	.rubrik_competition_table_colum {
+		width: 100%; /* Колонки занимают всю ширину */
+		flex-direction: column; /* Элементы в колонке выстраиваются вертикально */
+		align-items: center; /* Центрирование элементов колонки по горизонтали */
+  }
+
+  /* Стили для строк внутри колонок */
+  .rubrik_competition_table_row {
+		width: 90%; /* Ширина строки теперь 100% */
+		justify-content: center; /* Центрирование содержимого строки */
+		padding: 10px; /* Отступы внутри строки */
+  }
+
+  /* Стили для видео */
+  .rubrik_competition_video {
+		width: 100%; /* Видео занимает всю ширину строки */
+  }
+
+  /* Стили для iframe внутри видео */
+  .rubrik_competition_video iframe {
+		width: 100%; /* Ширина iframe теперь 100% */
+		height: 100%; /* Высота iframe теперь автоматически регулируется */
+  }
+}
